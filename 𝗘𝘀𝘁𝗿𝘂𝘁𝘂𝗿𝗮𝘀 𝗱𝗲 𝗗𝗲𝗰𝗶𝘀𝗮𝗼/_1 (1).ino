@@ -15,10 +15,9 @@ void setup()
   resultadoReal = peso / sq(altura);
   Serial.println(resultadoReal);
   
- if (resultadoReal  > 25){
-    Serial.println("Acima do peso");
  
-  }else if( resultadoReal >= 40){
+ 
+  if( resultadoReal >= 40){
   Serial.println ("Obesidade |||"); 
    
    }else if( resultadoReal <= 35.0 && resultadoReal > 39.9){
