@@ -1,3 +1,9 @@
+/*
+Nome do Arquivo:𝗘𝘀𝘁𝗿𝘂𝘁𝘂𝗿𝗮𝘀 𝗱𝗲 𝗗𝗲𝗰𝗶𝘀𝗮𝗼
+Autor:CAH
+Data:28/02/2025
+Descricao:.....
+*/
 //**EXERCICIO 1***
 int temperatura = 45;
 
