@@ -1,3 +1,10 @@
+/*
+Nome do Arquivo:Switch case
+Autor:CAH
+Data:25/02/2025
+Descricao:.....
+*/
+
 #define pinLedvermelho 13
 #define pinLeAmarelo 12
 #define pinLedverde 11

@@ -1,3 +1,10 @@
+/*
+Nome do Arquivo:Exercicio-Switch case
+Autor:CAH
+Data:25/02/2025
+Descricao:.....
+*/
+
 #define pinLedAzul 13
 #define pinLedAmarelo 12
 #define pinLedVermelho 11
