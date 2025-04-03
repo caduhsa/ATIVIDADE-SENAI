@@ -1,0 +1,45 @@
+#include <Arduino.h>
+const int pinLed = 2;
+void ligaLed(int);  
+void desligaLed(int);
+void piscaLed(int, unsigned long);
+int somaDeDoisNumeros(int, int);
+
+//PROTOTIPOS DAS FUNCOES
+// define todas as funcoes e o que elas pedem
+void setup()
+{
+  pinMode(2, OUTPUT);
+  Serial.begin(9600);
+}
+
+void loop()
+{
+  piscaLed(2,100);// faz o pino 2 piscar e define 100 milisegundos
+  int resultadoDasoma = somaDeDoisNumeros(4, 8);//Joga a soma dos numeros em uma variavel
+  Serial.println(resultadoDasoma);// Imprime o resultado da soma
+}
+
+void ligaLed(int pin)// funcao que precisa do int para saber qual e o pino que esta ligado
+{
+  digitalWrite(pin, HIGH);//liga pino que foi definido
+}
+
+void desligaLed(int pin)//funcao que precisa do int para saber qual e o pino que esta desligado
+{
+  digitalWrite(pin, LOW);//desliga pino que foi definido
+}
+
+void piscaLed(int pin, unsigned long tempo)//funcao que precisa do int para definir o pino e unsigned long para definir o tempo
+{
+ligaLed(pin);//liga o pino definido
+delay(tempo);//espera o tempo definido
+desligaLed(pin);//desliga o pino definido
+delay(tempo);//espera o tempo definido
+}
+
+int somaDeDoisNumeros(int numeroA, int numeroB)//e uma funcao que pede dois numeros para soma-los
+{
+int resultado = numeroA * numeroB;//soma dois numeros definidos
+return resultado;//retorna o resultado da soma
+}//e essa funcao que comeca com int precisa do return para acabar ela
